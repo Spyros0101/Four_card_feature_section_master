@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+}
+
+header {
+    width: 600px;
+    padding: 30px; 
+}
+
+#prvi {
+    font-weight: 400;
+}
+
+h1 {
+    padding: 3px;
+    margin-left: 80px;
+    
+}
+
+p {
+    font-weight: 200;
+}
+
+header p {
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.supervisor, .teambuilder, .karma, .calculator {
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(4, 4, 117, 0.295) 0px 13px 27px -5px, rgba(13, 3, 110, 0.3) 0px 8px 16px -8px;;
+}
+
+img {
+    float: right;
+    margin-top: 20%;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.supervisor {
+    border-top: 6px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder {
+    border-top: 6px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 6px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+@media  screen and (max-width: 1080px) {
+    
+    header {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h1 {
+        width: 60%;
+    }
+
+}
+
+@media  screen and (max-width: 604px) {
+    .supervisor, .teambuilder, .karma, .calculator {
+        width: 70%;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    
+}
